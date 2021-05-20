@@ -10,12 +10,18 @@ import { File } from "./modules/File";
 import { User } from "./modules/User";
 import { FileIpfs } from "./modules/FileIpfs";
 import { CloudFunction } from "./modules/CloudFunction";
+import NestingExample from "./example";
 
 export const menu = [
   {
     path: "/authentication",
     label: "Authentication",
     component: Authentication,
+  },
+  {
+    path: "/nesting",
+    label: "Nesting",
+    component: NestingExample,
   },
   {
     path: "/login",
